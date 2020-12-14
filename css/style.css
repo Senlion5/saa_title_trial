@@ -1,0 +1,124 @@
+/* just to start clean in a browser */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.menu-box {
+  position: relative;
+  top: 0px;
+  left: 30px;
+  bottom: 0px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(240, 35%, 81%, 0.505),
+      hsla(268, 63%, 25%, 0.401)
+    ),
+    url(../img/SAA_title.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  clip-path: polygon(0 0, 100% 0%, 100% 90vh, 0 100%);
+}
+
+.logo-box {
+  position: static;
+  top: 0px;
+  left: 0px;
+  right: 30px;
+  bottom: 20px;
+}
+
+.logo {
+  height: 70px;
+}
+
+.text-box {
+  position: absolute;
+  top: 65.8%;
+  left: 48%;
+  transform: translate(-10%, -50%);
+}
+
+.heading-primary {
+  color: #cddbe4;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 6px;
+  text-align: right;
+  margin-left: 32px;
+  animation-name: moveFromLeft;
+  animation-duration: 2.9s;
+  animation-timing-function: ease-out;
+}
+
+.heading-primary-secondary {
+  display: block;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 8px;
+  text-align: right;
+  animation-name: moveFromRight;
+  animation-duration: 1.8s;
+  text-transform: uppercase;
+}
+
+.text-body {
+  position: relative;
+  margin: 40px 0 40px 0;
+  padding: 30px;
+}
+
+.text-page {
+  display: block;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: left;
+  margin-left: 32px;
+  margin-bottom: 40px;
+}
+
+@keyframes moveFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-150px);
+  }
+  60% {
+    transform: translate(45px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(190px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
